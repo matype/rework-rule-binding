@@ -1,0 +1,16 @@
+.hoge {
+  padding: 20px;
+}
+
+(.binding) {
+  float: left;
+}
+
+(.binding-2),
+header {
+  float: right;
+}
+
+(.binding) {
+  padding: 20px;
+}
