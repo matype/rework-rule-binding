@@ -14,8 +14,5 @@
   "license": "MIT",
   "devDependencies": {
     "rework": "^0.20.2"
-  },
-  "dependencies": {
-    "css-stringify": "^1.4.1"
   }
 }
