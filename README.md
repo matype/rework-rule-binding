@@ -18,7 +18,7 @@ var css = fs.readFileSync('build/build.css', 'utf8').toString();
 var out = rework(css).use(bind).toString();
 ```
 
-# What to expect
+# Example
 Selectors enclosed in parenthesis is not cascading.
 
 ```
