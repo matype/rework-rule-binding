@@ -2,6 +2,12 @@
 
 A [Rework](https://github.com/reworkcss/rework) plugin to not cascade the rules.
 
+# Installation
+
+```
+npm install rework-rule-binding
+```
+
 # Use
 As a Rework plugin:
 
