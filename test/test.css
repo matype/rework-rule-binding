@@ -1,4 +1,4 @@
-.hoge {
+.hoge, .piyo {
   padding: 20px;
 }
 
@@ -6,11 +6,14 @@
   float: left;
 }
 
-(.binding-2),
-header {
+(.binding-2) {
   float: right;
 }
 
-(.binding) {
+(.aaa) {
   padding: 20px;
+}
+
+.hoge {
+  font-size: 18px;
 }
