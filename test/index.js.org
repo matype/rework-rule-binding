@@ -1,6 +1,6 @@
 var fs = require('fs'),
-    rework = require('rework'),
-    bind = require('../');
+rework = require('rework'),
+bind = require('../');
 
 
 var css = fs.readFileSync('test.css', 'utf-8');

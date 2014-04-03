@@ -26,7 +26,7 @@ module.exports = function (ast, rework) {
         if (check(s)) {
           rule.selectors = [s];
         } else {
-          throw new Error('rework-binding: Compile Error !!');
+          throw new Error('rework-rule-binding: binding-selector must not cascade');
         }
       }
     });

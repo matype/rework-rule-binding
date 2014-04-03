@@ -1,20 +1,19 @@
-.hoge,
-.piyo {
-  padding: 20px;
+.bind-1 {
+  font-size: 12px;
 }
 
-.binding {
+.bind-2 {
   float: left;
 }
 
-.binding-2 {
+.bind-7 {
   float: right;
 }
 
-.aaa {
-  padding: 20px;
+.bind-3 .bind-4 {
+  margin: 10px;
 }
 
-.hoge {
-  font-size: 18px;
+.bind-6 {
+  padding: 10px;
 }

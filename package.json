@@ -3,16 +3,25 @@
   "version": "0.0.1",
   "description": "Rework plugin not to cascade the rules",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
+    "css",
     "rework",
-    "plugin"
+    "plugin",
+    "binding"
   ],
   "author": "Masaaki Morishita",
   "license": "MIT",
   "devDependencies": {
-    "rework": "^0.20.2"
+    "rework": "^0.20.2",
+    "mocha": "^1.18.2",
+    "should": "^3.2.0",
+    "chai": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morishitter/rework-rule-binding.git"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
   }
 }

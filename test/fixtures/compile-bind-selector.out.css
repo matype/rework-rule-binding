@@ -1,0 +1,17 @@
+.bind {
+  font-size: 12px;
+}
+
+.bind-2,
+.hoge {
+  font-size: 14px;
+}
+
+header,
+h1 {
+  font-size: 18px;
+}
+
+.bind-3 .bind-4 {
+  font-size; 20px;
+}

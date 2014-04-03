@@ -1,0 +1,11 @@
+.hoge, .piyo {
+  padding: 20px;
+}
+
+.binding {
+  float: left;
+}
+
+.hoge {
+  font-size: 12px;
+}
