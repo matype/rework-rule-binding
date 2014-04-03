@@ -1,4 +1,4 @@
-# rework-rule-binding
+# rework-rule-binding [![Build Status](https://travis-ci.org/morishitter/rework-rule-binding.png)](https://travis-ci.org/morishitter/rework-rule-binding)
 
 A [Rework](https://github.com/reworkcss/rework) plugin to not cascade the rules.
 
