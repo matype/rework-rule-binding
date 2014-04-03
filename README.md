@@ -2,13 +2,13 @@
 
 A [Rework](https://github.com/reworkcss/rework) plugin to not cascade the rules.
 
-# Installation
+## Installation
 
 ```
 npm install rework-rule-binding
 ```
 
-# Use
+## Use
 As a Rework plugin:
 
 ```javascript
@@ -24,7 +24,7 @@ var css = fs.readFileSync('build/build.css', 'utf8').toString();
 var out = rework(css).use(bind).toString();
 ```
 
-# Example
+## Example
 Selectors enclosed in parenthesis is not cascading.
 
 ```
@@ -42,7 +42,7 @@ Selectors enclosed in parenthesis is not cascading.
 ```
 runs **error**.
 
-# License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2014 Masaaki Morishita
