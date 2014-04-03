@@ -19,12 +19,12 @@ module.exports = function (ast, rework) {
 
     if (!rule.selectors) return;
 
-    rule.selectors.forEach(function (sel) {
+    rule.selectors.forEach(function (sel, index, arr) {
       if (sel.match(/^\(.+?\)/)) {
         var s = sel.slice(1, -1);
         Array.prototype.push.apply(newSels, [s]);
         if (check(s)) {
-          rule.selectors = [s];
+          arr[index] = s;
         } else {
           throw new Error('rework-rule-binding: binding-selector must not cascade');
         }

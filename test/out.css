@@ -2,10 +2,12 @@
   font-size: 12px;
 }
 
-.bind-2 {
+.bind-2,
+.hoge {
   float: left;
 }
 
+.piyo,
 .bind-7 {
   float: right;
 }
@@ -14,6 +16,7 @@
   margin: 10px;
 }
 
+.bind-5,
 .bind-6 {
   padding: 10px;
 }
