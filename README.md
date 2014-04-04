@@ -27,7 +27,7 @@ var out = rework(css).use(bind).toString();
 ## Example
 Selectors enclosed in parenthesis is not cascading.
 
-```
+```css
 (.binded) {
   color: red;
 }
@@ -40,7 +40,7 @@ Run **error**.
 
 And placeholder selector is not cascading too.
 
-```
+```css
 %placeholder {
     color: red;
 }
