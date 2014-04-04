@@ -6,7 +6,10 @@ module.exports = function (ast, rework) {
   ast.rules.forEach(function visit(rule) {
     rule.selectors.forEach(function (allSel) {
       if (allSel.match(/^\(.+?\)/)) {
-        allSel  = allSel.slice(1, -1);
+        allSel = allSel.slice(1, -1);
+      }
+      if (allSel.match(/^\%.+?/)) {
+        allSel = allSel.slice(1);
       }
       Array.prototype.push.apply(allSels, [allSel]);
     });
@@ -27,6 +30,15 @@ module.exports = function (ast, rework) {
           arr[index] = s;
         } else {
           throw new Error('rework-rule-binding: binding-selector must not cascade');
+        }
+      }
+      if (sel.match(/^\%.+?/)) {
+        var s = sel.slice(1);
+        Array.prototype.push.apply(newSels, [s]);
+        if (check(s)) {
+          arr[index] = s;
+        } else {
+          throw new Error('rework-rule-binding: placeholder selector must not cascade');
         }
       }
     });
