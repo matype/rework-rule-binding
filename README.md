@@ -36,7 +36,7 @@ Selectors enclosed in parenthesis is not cascading.
   font-size: 18px;
 }
 ```
-runs **error**.
+Run **error**.
 
 And placeholder selector is not cascading too.
 
@@ -50,7 +50,7 @@ And placeholder selector is not cascading too.
 }
 ```
 
-Run **error**
+Run **error**.
 
 
 ## License
