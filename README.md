@@ -28,19 +28,30 @@ var out = rework(css).use(bind).toString();
 Selectors enclosed in parenthesis is not cascading.
 
 ```
-(.hoge) {
+(.binded) {
   color: red;
 }
 
-.piyo {
-  color: blue;
-}
-
-.hoge {
+.binded {
   font-size: 18px;
 }
 ```
 runs **error**.
+
+And placeholder selector is not cascading too.
+
+```
+%placeholder {
+    color: red;
+}
+
+%placeholder {
+    font-size: 12px;
+}
+```
+
+Run **error**
+
 
 ## License
 The MIT License (MIT)
