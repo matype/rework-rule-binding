@@ -1,5 +1,6 @@
 var fs = require('fs'),
     rework = require('rework'),
+    extend = require('rework').extend(),
     expect = require('chai').expect,
     bind = require('../');
 
@@ -10,6 +11,7 @@ function fixture(name) {
 function compareFixtures(name) {
   return expect(
     rework(fixture(name))
+    .use(extend)
     .use(bind)
     .toString().trim()
   ).to.equal(fixture(name + '.out'));
@@ -22,6 +24,14 @@ describe('rework-rule-binding', function() {
 
   it('compile binded selectors', function() {
     compareFixtures('compile-bind-selector');
+  });
+
+  it('extend', function() {
+    compareFixtures('extend');
+  });
+
+  it('extend placeholder', function() {
+    compareFixtures('extend-placeholder');
   });
 
   it('throw error when cascade binding-selector', function() {

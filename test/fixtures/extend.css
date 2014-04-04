@@ -1,0 +1,8 @@
+.extend {
+  color: red;
+}
+
+.hoge {
+  font-size: 12px;
+  extend: .extend;
+}
