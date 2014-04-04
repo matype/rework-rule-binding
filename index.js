@@ -29,7 +29,9 @@ module.exports = function (ast, rework) {
         if (check(s)) {
           arr[index] = s;
         } else {
-          throw new Error('rework-rule-binding: binding-selector must not cascade');
+          var err =  new Error('rework-rule-binding: binding-selector must not cascade');
+          err.position = rule.declarations.position;
+          throw err;
         }
       }
       if (sel.match(/^\%.+?/)) {
@@ -38,7 +40,9 @@ module.exports = function (ast, rework) {
         if (check(s)) {
           arr[index] = s;
         } else {
-          throw new Error('rework-rule-binding: placeholder selector must not cascade');
+          var err = new Error('rework-rule-binding: placeholder selector must not cascade');
+          err.position = rule.declarations.position;
+          throw err;
         }
       }
     });
