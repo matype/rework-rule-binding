@@ -1,6 +1,6 @@
 # rework-rule-binding [![Build Status](https://travis-ci.org/morishitter/rework-rule-binding.png)](https://travis-ci.org/morishitter/rework-rule-binding)
 
-A [Rework](https://github.com/reworkcss/rework) plugin to not cascade the rules.
+A [Rework](https://github.com/reworkcss/rework) plugin to prohibit cascading the ruleset.
 
 ## Installation
 
@@ -25,7 +25,7 @@ var out = rework(css).use(bind).toString();
 ```
 
 ## Example
-Selectors enclosed in parenthesis is not cascading.
+Selectors enclosed in parenthesis don't cascade.
 
 ```css
 (.binded) {
@@ -38,7 +38,7 @@ Selectors enclosed in parenthesis is not cascading.
 ```
 Run **error**.
 
-And placeholder selector is not cascading too.
+And placeholder selectors with `rework.extend()` don't cascade too.
 
 ```css
 %placeholder {
