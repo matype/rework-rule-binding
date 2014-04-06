@@ -3,5 +3,6 @@
 }
 
 .hoge {
+  color: red;
   extend: %ph;
 }
