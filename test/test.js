@@ -1,6 +1,6 @@
 var fs = require('fs'),
     rework = require('rework'),
-    extend = require('rework').extend(),
+    extend = require('rework-inherit')(),
     expect = require('chai').expect,
     bind = require('../');
 
