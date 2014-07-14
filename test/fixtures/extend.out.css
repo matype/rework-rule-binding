@@ -1,8 +1,8 @@
-.extend,
-.hoge {
+.att,
+.attBox {
   color: red;
 }
 
-.hoge {
-  font-size: 12px;
+.attBox {
+  padding: 15px;
 }
