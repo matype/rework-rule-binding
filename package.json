@@ -1,6 +1,6 @@
 {
   "name": "rework-rule-binding",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "A Rework plugin to prohibit cascading the rulesets",
   "main": "index.js",
   "keywords": [
