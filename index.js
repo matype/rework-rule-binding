@@ -11,7 +11,7 @@ module.exports = function (ast, rework) {
                 allSel = allSel.slice(1, -1);
             }
             if (allSel.match(/^\%.+?/)) {
-                allSel = allSel.slice(1);
+                //allSel = allSel.slice(1);
             }
             Array.prototype.push.apply(allSels, [allSel]);
         });
@@ -26,7 +26,8 @@ module.exports = function (ast, rework) {
 
         rule.selectors.forEach(function (sel, index, arr) {
             if (sel.match(/^\%/)) {
-                var s = sel.slice(1);
+                //var s = sel.slice(1);
+                var s = sel
                 Array.prototype.push.apply(newSels, [s]);
                 if (check(s)) {
                     arr[index] = s;
