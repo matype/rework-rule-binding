@@ -1,6 +1,5 @@
 var inspect = require('obj-inspector')
 module.exports = function (ast, rework) {
-    // inspect(ast)
 
     var newSels = [];
     var allSels = [];
