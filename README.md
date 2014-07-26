@@ -1,6 +1,6 @@
 # rework-rule-binding [![Build Status](https://travis-ci.org/morishitter/rework-rule-binding.png)](https://travis-ci.org/morishitter/rework-rule-binding)
 
-A [Rework](https://github.com/reworkcss/rework) plugin to prohibit cascading the rulesets.
+[Rework](https://github.com/reworkcss/rework) plugin to prohibit cascading the rulesets.
 
 ## Installation
 
@@ -20,7 +20,7 @@ var bind = require('rework-rule-binding');
 // css to be processed
 var css = fs.readFileSync('build/build.css', 'utf8').toString();
 
-// process css using rework-vars
+// process css using rework-rule-binding
 var out = rework(css).use(bind).toString();
 ```
 
@@ -38,7 +38,7 @@ Selectors enclosed in parenthesis don't cascade.
 ```
 Run **error**.
 
-And placeholder selectors with `rework.extend()` don't cascade too.
+And placeholder selectors with `rework-inherit` don't cascade too.
 
 ```css
 %placeholder {
